@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_dash_board"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical">
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/green"
+         >
+ -->
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/hz_signout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvHome"
+                    style="@style/menuTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:gravity="center"
+                    android:text="@string/home"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:id="@+id/hz_home"
+                    style="@style/hzView"
+                    android:layout_below="@+id/tvHome" />
+
+                <TextView
+                    android:id="@+id/txt_account_info"
+                    style="@style/menuTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_below="@+id/hz_home"
+                    android:gravity="center"
+                    android:text="@string/account_info"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:id="@+id/hz_account"
+                    style="@style/hzView"
+                    android:layout_below="@+id/txt_account_info" />
+
+                <TextView
+                    android:id="@+id/txt_about"
+                    style="@style/menuTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/hz_account"
+                    android:gravity="center"
+                    android:text="@string/about_this_app"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:id="@+id/hz_about"
+                    style="@style/hzView"
+                    android:layout_below="@+id/txt_about" />
+
+                <TextView
+                    android:id="@+id/txt_terms"
+                    style="@style/menuTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_below="@+id/hz_about"
+                    android:gravity="center"
+                    android:text="@string/terms_of_service"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:id="@+id/hz_terms"
+                    style="@style/hzView"
+                    android:layout_below="@+id/txt_terms" />
+
+                <TextView
+                    android:id="@+id/txt_privacy"
+                    style="@style/menuTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_below="@+id/hz_terms"
+                    android:gravity="center"
+                    android:text="@string/privacy_policy"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:id="@+id/hz_privacy"
+                    style="@style/hzView"
+                    android:layout_below="@+id/txt_privacy" />
+
+                <TextView
+                    android:id="@+id/txt_contact_us"
+                    style="@style/menuTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_below="@+id/hz_privacy"
+                    android:gravity="center"
+                    android:text="@string/conatct_us"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:id="@+id/hz_contact_us"
+                    style="@style/hzView"
+                    android:layout_below="@+id/txt_contact_us" />
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+        <View
+            android:id="@+id/hz_signout"
+            style="@style/hzView"
+            android:layout_above="@+id/txt_sign_out" />
+
+        <TextView
+            android:id="@+id/txt_sign_out"
+            style="@style/menuTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="@string/sign_out"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </RelativeLayout>
+    <!-- </ScrollView>-->
+</LinearLayout>

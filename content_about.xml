@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ldainteractive.nest.ui.AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/ic_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ib_back">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_120sdp"
+                android:gravity="center"
+                android:text="@string/about"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_22sdp" />
+
+            <TextView
+                android:id="@+id/tv_hello"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignEnd="@+id/tv_about"
+                android:layout_alignLeft="@+id/tv_about"
+                android:layout_alignRight="@+id/tv_about"
+                android:layout_alignStart="@+id/tv_about"
+                android:layout_below="@+id/tv_about"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:alpha=".8"
+                android:text="@string/hello_about"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tv_photos"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignEnd="@+id/tv_hello"
+                android:layout_alignLeft="@+id/tv_hello"
+                android:layout_alignRight="@+id/tv_hello"
+                android:layout_alignStart="@+id/tv_hello"
+                android:layout_below="@+id/tv_hello"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:alpha=".8"
+                android:text="@string/photos"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tv_viewing"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignEnd="@+id/tv_photos"
+                android:layout_alignLeft="@+id/tv_photos"
+                android:layout_alignRight="@+id/tv_photos"
+                android:layout_alignStart="@+id/tv_photos"
+                android:layout_below="@+id/tv_photos"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_button"
+                android:alpha=".8"
+                android:gravity="center"
+                android:text="@string/viewing"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tv_scanning"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignEnd="@+id/tv_viewing"
+                android:layout_alignLeft="@+id/tv_viewing"
+                android:layout_alignRight="@+id/tv_viewing"
+                android:alpha=".8"
+                android:layout_alignStart="@+id/tv_viewing"
+                android:layout_below="@+id/tv_viewing"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:text="@string/scanning"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tv_saving"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignEnd="@+id/tv_scanning"
+                android:layout_alignLeft="@+id/tv_scanning"
+                android:layout_alignRight="@+id/tv_scanning"
+                android:layout_alignStart="@+id/tv_scanning"
+                android:layout_below="@+id/tv_scanning"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:alpha=".8"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:text="@string/saving"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

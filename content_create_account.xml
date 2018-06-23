@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_create_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ldainteractive.nest.ui.CreateAccountActivity"
+    tools:showIn="@layout/activity_create_account">
+
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/ic_back" />
+
+    <ScrollView
+        android:layout_below="@+id/ib_back"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:text="@string/Create_Account"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_22sdp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/border_rounded_edittext"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/green"
+                android:textColorHint="@color/green"
+                android:textSize="@dimen/_16sdp" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignEnd="@+id/et_email"
+                android:layout_alignLeft="@+id/et_email"
+                android:layout_alignRight="@+id/et_email"
+                android:layout_alignStart="@+id/et_email"
+                android:layout_below="@+id/et_email"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/border_rounded_edittext"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/green"
+                android:textColorHint="@color/green"
+                android:textSize="@dimen/_16sdp" />
+
+            <EditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignEnd="@+id/et_password"
+                android:layout_alignLeft="@+id/et_password"
+                android:layout_alignRight="@+id/et_password"
+                android:layout_alignStart="@+id/et_password"
+                android:layout_below="@+id/et_password"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="sans-serif"
+                android:background="@drawable/border_rounded_edittext"
+                android:gravity="center"
+                android:hint="@string/Confirm_Password"
+                android:inputType="textPassword"
+                android:textColor="@color/green"
+                android:textColorHint="@color/green"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/txtSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignEnd="@+id/et_confirm_password"
+                android:layout_alignLeft="@+id/et_confirm_password"
+                android:layout_alignRight="@+id/et_confirm_password"
+                android:layout_alignStart="@+id/et_confirm_password"
+                android:layout_below="@+id/et_confirm_password"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/rounded_button"
+                android:alpha=".8"
+                android:gravity="center"
+                android:text="@string/Submit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16sdp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
